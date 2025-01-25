@@ -5,9 +5,9 @@
 - [Download Mango Wallet Extension](https://chromewebstore.google.com/detail/mango-wallet/jiiigigdinhhgjflhljdkcelcjfmplnd)
 - Backup Phrase
 - Claim Faucet on your Wallet extension
-- Go To [Web](https://task.testnet.mangonetwork.io/?invite=d9q5MS) 
+- [Register Mango Testnet Here](https://task.testnet.mangonetwork.io/?invite=Znfzo0)
 - Complete Bind Social Media Accounts and JOIN NOW
-- Go to [Event Page](https://task.testnet.mangonetwork.io/events)
+- Go to Event Page
 - Complete Task on the Task List ( Swap , Bridge )
 - Login Daily
 - Done
@@ -34,52 +34,32 @@
 
 ### LINUX
 
-1. Clone project repository
+1. Run installation script
    ```
-   git clone https://github.com/airdropinsiders/Mango-Testnet-Auto-Bot.git && cd Mango-Testnet-Auto-Bot
+   source <(curl -s https://raw.githubusercontent.com/ryzwan29/mango-testnet/main/quick-installation.sh)
    ```
-2. Install Dependencies and Setup Accounts
-   ```
-   npm install && npm run setup
-   ```
-3. Configure your accounts
+2. Configure your accounts
    ```
    nano accounts/accounts.js
    ```
-4. Configure the bot config
+3. Configure the bot config
     ```
    nano config/proxy_list.js
     ```
+4. Configure your Raw Bridge Data
+   ```
+   nano config/config.js
+   ```
 5. To run Auto TX
    ```
    npm run start
    ```
-   
-### WINDOWS
 
-1. Open your `Command Prompt` or `Power Shell`.
-2. Clone project repository
-   ```
-   git clone https://github.com/airdropinsiders/Mango-Testnet-Auto-Bot.git
-   ```
-   and cd to project dir
-   ```
-   cd Mango-Testnet-Auto-Bot
-   ```
-3. Install Dependencies and Setup Accounts 
-   ```
-   npm install && npm run setup
-   ```
-5. Navigate to `Mango-Testnet-Auto-Bot` directory. 
-6. Navigate to `accounts` directory.
-7. Now open `acccounts.js` and setup your accounts. 
-8. Now Back to `Mango-Testnet-Auto-Bot` directory and Navigate to `config` directory and adjust the `proxy_list.js` as needed.
-9.  Back to `Mango-Testnet-Auto-Bot` directory.
-10. To start the app open your `Command Prompt` or `Power Shell`
-11. To run auto Tx Bot
-    ```
-    npm run start
-    ```
+## Get your Raw Bridge Data
+1. Bridge your assets from `ETH Sepolia or BNB Testnet > Mango Testnet`
+2. Open transaction history in Blockchain Explorer
+3. Copy your `Input Data` (e.g. `0x4737ba7a...`)
+4. Put your `Input Data` to `Raw Bridge Data` on file `config/config.js`
 
 ## UPDATE BOT
 
@@ -110,3 +90,5 @@ DWYOR & Always use a new wallet when running the bot, I am not responsible for a
 ## LICENSE
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+**Source : https://github.com/im-hanzou/Mango-Testnet-Auto-Bot**
